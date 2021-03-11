@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico" />
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico" />    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>KOPERASI SANYOS MITRA SEJATI</title>
+    <title>{{ config('app.name', 'KOPERASI SANYOS MITRA SEJATI') }}</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/template/global/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/template/global/css/bootstrap-extend.min.css">
