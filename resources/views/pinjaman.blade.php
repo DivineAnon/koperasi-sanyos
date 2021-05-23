@@ -67,48 +67,120 @@
                 <a href="{{ route('logout') }}" class="custom-button"><i class="icon md-power"></i> Logout</a>
             </div>
 
-            <div class="panel mt-10">
-                <h2 style="text-align: center"><b>DATA PINJAMAN</b></h2>
-                <header class="panel-heading">
-                    <div class="panel-actions">
-                        <div class="dt-buttons btn-group">
-                            <a href="" class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="exampleTableTools" type="button"><span>Copy</span></a>
-                            <a href="" class="btn btn-secondary buttons-csv buttons-html5" tabindex="0" aria-controls="exampleTableTools" type="button"><span>CSV</span></a>
-                            <a href="" class="btn btn-secondary buttons-print" tabindex="0" aria-controls="exampleTableTools" type="button"><span>Print</span></a>
+            <div class="example-wrap">
+                <div class="nav-tabs-horizontal" data-plugin="tabs">
+                    <ul class="nav nav-tabs nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation"><a class="nav-link active show" data-toggle="tab"
+                                href="#exampleTabsSolidOne" aria-controls="exampleTabsSolidOne" role="tab"
+                                aria-selected="true">Master Pinjaman</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab"
+                                href="#exampleTabsSolidTwo" aria-controls="exampleTabsSolidTwo" role="tab"
+                                aria-selected="false">Pinjaman</a></li>
+                        <li class="dropdown nav-item" role="presentation" style="display: none;">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#"
+                                aria-expanded="false">Dropdown </a>
+                            <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" data-toggle="tab" href="#exampleTabsSolidOne"
+                                    aria-controls="exampleTabsSolidOne" role="tab">Master Pinjaman</a>
+                                <a class="dropdown-item" data-toggle="tab" href="#exampleTabsSolidTwo"
+                                    aria-controls="exampleTabsSolidTwo" role="tab">Pinjaman</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="exampleTabsSolidOne" role="tabpanel">
+                            <div class="panel mt-10">
+                                <h2 class="text-center mt-10"><b>DATA MASTER PINJAMAN</b></h2>
+                                <header class="panel-heading">
+                                    <div class="panel-actions">
+                                        <div class="dt-buttons btn-group">
+                                            <a href="" class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="exampleTableTools" type="button"><span>Copy</span></a>
+                                            <a href="" class="btn btn-secondary buttons-csv buttons-html5" tabindex="0" aria-controls="exampleTableTools" type="button"><span>CSV</span></a>
+                                            <a href="" class="btn btn-secondary buttons-print" tabindex="0" aria-controls="exampleTableTools" type="button"><span>Print</span></a>
+                                        </div>
+                                    </div>
+                                    <h3 class="panel-title">
+                                        <a href="" class="btn btn-primary waves-effect waves-classic"style="color: aliceblue"><i class="icon md-plus"></i>Tambah Data</a>
+                                    </h3>
+                                </header>
+                                <div class="panel-body">
+                                    <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>No Anggota</th>
+                                                <th>Nama Anggota</th>
+                                                <th>Alamat</th>
+                                                <th>No Telp</th>
+                                                <th>Pekerjaan</th>
+                                                <th>Aksi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>5516 Adolfo Green</td>
+                                                <td>Littelhaven</td>
+                                                <td>85</td>
+                                                <td>2014/06/13</td>
+                                                <td>Damon</td>
+                                                <td>
+                                                    <a href="" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic"><i class="icon md-edit"></i> Ubah</a>
+                                                    <a href="" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic"><i class="icon md-delete"></i> Hapus</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="exampleTabsSolidTwo" role="tabpanel">
+                            <div class="panel mt-10">
+                                <h2 class="text-center mt-10"><b>DATA PINJAMAN</b></h2>
+                                <header class="panel-heading">
+                                    <div class="panel-actions">
+                                        <div class="dt-buttons btn-group">
+                                            <a href="" class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="exampleTableTools" type="button"><span>Copy</span></a>
+                                            <a href="" class="btn btn-secondary buttons-csv buttons-html5" tabindex="0" aria-controls="exampleTableTools" type="button"><span>CSV</span></a>
+                                            <a href="" class="btn btn-secondary buttons-print" tabindex="0" aria-controls="exampleTableTools" type="button"><span>Print</span></a>
+                                        </div>
+                                    </div>
+                                    <h3 class="panel-title">
+                                        <a href="" class="btn btn-primary waves-effect waves-classic"style="color: aliceblue"><i class="icon md-plus"></i>Tambah Data</a>
+                                    </h3>
+                                </header>
+                                <div class="panel-body">
+                                    <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>No Anggota</th>
+                                                <th>Nama Anggota</th>
+                                                <th>Alamat</th>
+                                                <th>No Telp</th>
+                                                <th>Pekerjaan</th>
+                                                <th>Aksi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>5516 Adolfo Green</td>
+                                                <td>Littelhaven</td>
+                                                <td>85</td>
+                                                <td>2014/06/13</td>
+                                                <td>Damon</td>
+                                                <td>
+                                                    <a href="" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic"><i class="icon md-edit"></i> Ubah</a>
+                                                    <a href="" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic"><i class="icon md-delete"></i> Hapus</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="panel-title">
-                        <a href="" class="btn btn-primary waves-effect waves-classic"style="color: aliceblue"><i class="icon md-plus"></i>Tambah Data</a>
-                    </h3>
-                </header>
-                <div class="panel-body">
-                    <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>No Anggota</th>
-                                <th>Nama Anggota</th>
-                                <th>Alamat</th>
-                                <th>No Telp</th>
-                                <th>Pekerjaan</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>5516 Adolfo Green</td>
-                                <td>Littelhaven</td>
-                                <td>85</td>
-                                <td>2014/06/13</td>
-                                <td>Damon</td>
-                                <td>
-                                    <a href="" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic"><i class="icon md-edit"></i> Ubah</a>
-                                    <a href="" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic"><i class="icon md-delete"></i> Hapus</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
     </div>

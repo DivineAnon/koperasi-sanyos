@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Anggota;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AnggotaController extends Controller
 {
@@ -14,7 +15,8 @@ class AnggotaController extends Controller
      */
     public function index()
     {
-        return view('anggota');
+        $anggotas = DB::table('anggota')->get();
+        return view('anggota', ['anggotas' => $anggotas]);
     }
 
     /**

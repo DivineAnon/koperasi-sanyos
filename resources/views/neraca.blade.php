@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico" />    <!-- CSRF Token -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico" />
+    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ config('app.name', 'KOPERASI SANYOS MITRA SEJATI') }}</title>
@@ -67,7 +68,7 @@
             </div>
 
             <div class="panel mt-10">
-                <h2 style="text-align: center"><b>DATA ANGGOTA</b></h2>
+                <h2 style="text-align: center"><b>DATA NERACA</b></h2>
                 <header class="panel-heading">
                     <div class="panel-actions">
                         <div class="dt-buttons btn-group">
@@ -84,6 +85,7 @@
                     <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>No Anggota</th>
                                 <th>Nama Anggota</th>
                                 <th>Alamat</th>
@@ -93,19 +95,18 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($anggotas as $key => $item)
                             <tr>
-                                <td>{{ $item->no_ang }}</td>
-                                <td>{{ $item->nama_ang }}</td>
-                                <td>{{ $item->alamat }}</td>
-                                <td>{{ $item->no_telp }}</td>
-                                <td>{{ $item->pekerjaan }}</td>
+                                <td>1</td>
+                                <td>5516 Adolfo Green</td>
+                                <td>Littelhaven</td>
+                                <td>85</td>
+                                <td>2014/06/13</td>
+                                <td>Damon</td>
                                 <td>
                                     <a href="" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic"><i class="icon md-edit"></i> Ubah</a>
                                     <a href="" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic"><i class="icon md-delete"></i> Hapus</a>
                                 </td>
                             </tr>
-                            @endforeach
                         </tbody>
                     </table>
                 </div>

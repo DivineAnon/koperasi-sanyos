@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Simpanan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SimpananController extends Controller
 {

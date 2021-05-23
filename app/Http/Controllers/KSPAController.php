@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\KSPA;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class KSPAController extends Controller
 {
@@ -14,7 +15,8 @@ class KSPAController extends Controller
      */
     public function index()
     {
-        return view('kspa');
+        $kspas = DB::table('anggota')->get();
+        return view('kspa', ['kspas' => $kspas]);
     }
 
     /**

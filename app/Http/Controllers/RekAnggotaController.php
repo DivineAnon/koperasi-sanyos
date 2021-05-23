@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\RekAnggota;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class RekAnggotaController extends Controller
 {

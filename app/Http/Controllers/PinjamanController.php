@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Pinjaman;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PinjamanController extends Controller
 {
