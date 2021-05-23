@@ -78,7 +78,7 @@
                 <div class="card bg-info">
                     <div class="card-body text-center">
                         <h2 class="card-text" style="color: aliceblue">Neraca</h2>
-                        <h2 class="card-text"><a href="" class="custom-button"><i class="icon md-book"></i> Manage</a href="" class="custom-button"></h2>
+                        <h2 class="card-text"><a href="{{ route('neraca') }}" class="custom-button"><i class="icon md-book"></i> Manage</a href="" class="custom-button"></h2>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <div class="card bg-info">
                     <div class="card-body text-center">
                         <h2 class="card-text" style="color: aliceblue">LKSB</h2>
-                        <h2 class="card-text"><a href="" class="custom-button"><i class="icon md-book"></i> Manage</a href="" class="custom-button"></h2>
+                        <h2 class="card-text"><a href="{{ route('lksb') }}" class="custom-button"><i class="icon md-book"></i> Manage</a href="" class="custom-button"></h2>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                 <div class="card bg-info">
                     <div class="card-body text-center">
                         <h2 class="card-text" style="color: aliceblue">SHU</h2>
-                        <h2 class="card-text"><a href="" class="custom-button"><i class="icon md-book"></i> Manage</a href="" class="custom-button"></h2>
+                        <h2 class="card-text"><a href="{{ route('shu') }}" class="custom-button"><i class="icon md-book"></i> Manage</a href="" class="custom-button"></h2>
                     </div>
                 </div>
             </div>

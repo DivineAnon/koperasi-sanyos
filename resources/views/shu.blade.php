@@ -68,7 +68,7 @@
             </div>
 
             <div class="panel mt-10">
-                <h2 style="text-align: center"><b>DATA KSPA</b></h2>
+                <h2 style="text-align: center"><b>DATA SHU</b></h2>
                 <header class="panel-heading">
                     <div class="panel-actions">
                         <div class="dt-buttons btn-group">
